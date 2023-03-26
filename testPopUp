@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text Box Example</title>
+	<style>
+		body {
+			background-color: #f1f1f1;
+			font-family: Arial, sans-serif;
+		}
+
+		#textbox {
+			position: fixed;
+			bottom: 20px;
+			left: 20px;
+			background-color: #fff;
+			box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+			border-radius: 5px;
+			padding: 20px;
+			display: block;
+		}
+
+		#textbox p {
+			margin: 0;
+			font-size: 16px;
+			line-height: 1.5;
+			color: #333;
+			opacity:0.7;
+		}
+
+		button {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 10px 15px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin-top: 20px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #2d883c;
+		}
+	</style>
+</head>
+<body>
+	<div id="textbox">
+		<p>This is an example text box!</p>
+		<button id="hide-btn">Hide Text Box</button>
+	</div>
+
+	<script>
+		document.getElementById("hide-btn").addEventListener("click", function(){
+			document.getElementById("textbox").style.display = "none";
+		});
+	</script>
+</body>
+</html>
